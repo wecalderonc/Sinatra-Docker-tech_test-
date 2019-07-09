@@ -13,11 +13,9 @@ require 'uri'
 set :bind, '0.0.0.0'
 
 post '/' do
-  p input = JSON.parse(request.body.read)
+  input = JSON.parse(request.body.read)
   list(input)
-  #list(JSON.parse(request.body.read))
-  # push = JSON.parse(request.body.read)
-  # list(push)
+
 end
 
 
